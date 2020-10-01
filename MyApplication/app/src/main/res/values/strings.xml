@@ -15,4 +15,7 @@
     <string name="butCambiar2">Cambiar Texto</string>
     <string name="tvHello2">Holas</string>
 
+    <string name="key">SharedPreferencesKey</string>
+    <string name="defaultKeyTxt">No data found</string>
+
 </resources>

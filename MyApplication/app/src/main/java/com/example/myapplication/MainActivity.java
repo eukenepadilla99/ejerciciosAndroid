@@ -2,7 +2,9 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
     private Button butSendInput;
     private EditText textInput;
 
+
+    private SharedPreferences sharedPref;
+    private SharedPreferences.Editor editor;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
         tvHello=findViewById(R.id.tvHello);
         butSendInput=findViewById(R.id.butSendInput);
         textInput=findViewById(R.id.textInput);
+
+        Context context = getBaseContext();
+
+        sharedPref=this.getPreferences(Context.MODE_PRIVATE);
+        editor =sharedPref.edit();
+
+        String value=sharedPref.getString(getString(R.string.key),getString(R.string.defaultKeyTxt));
+        tvHello.setText(value);
 
         butSendInput.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -66,8 +81,16 @@ public class MainActivity extends AppCompatActivity {
         switch(requestCode){
             case Values.REQ_ACT_2:
                 if (resultCode == RESULT_OK) {
-                        String requiredText=data.getStringExtra(Values.CLAVE_INTENT);
-                        tvHello.setText(requiredText);
+
+                    editor.putString(getString(R.string.key),data.getStringExtra(Values.CLAVE_INTENT));
+                    //editor.commit();
+                    editor.apply();
+
+                    String value=sharedPref.getString(getString(R.string.key),getString(R.string.defaultKeyTxt));
+                    tvHello.setText(value);
+
+//                        String requiredText=data.getStringExtra(Values.CLAVE_INTENT);
+//                        tvHello.setText(requiredText);
 
                 }
         }
