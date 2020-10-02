@@ -12,29 +12,33 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 public class AlumnoAdapter extends RecyclerView.Adapter<AlumnoAdapter.AlumnoBasicViewHolder> {
 
-public static class AlumnoBasicViewHolder extends RecyclerView.ViewHolder {
-    public TextView tvNombre;
-    public TextView tvApellidos;
-    public TextView tvCiclo;
-    public TextView tvCurso;
+    public static class AlumnoBasicViewHolder extends RecyclerView.ViewHolder {
+        public TextView tvNombre;
+        public TextView tvApellidos;
+        public TextView tvCiclo;
+        public TextView tvCurso;
 
-    public AlumnoBasicViewHolder(View itemView) {
+        public AlumnoBasicViewHolder(View itemView) {
 
-        super(itemView);
+            super(itemView);
 
 
-        tvNombre = itemView.findViewById(R.id.tvNombre);
-        tvApellidos = itemView.findViewById(R.id.tvApellidos);
-        tvCiclo = itemView.findViewById(R.id.tvCiclo);
-        tvCurso = itemView.findViewById(R.id.tvCurso);
+            tvNombre = itemView.findViewById(R.id.tvNombre);
+            tvApellidos = itemView.findViewById(R.id.tvApellidos);
+            tvCiclo = itemView.findViewById(R.id.tvCiclo);
+            tvCurso = itemView.findViewById(R.id.tvCurso);
 
+
+            }
 
         }
 
-    }
+
+
     public AlumnoAdapter(){
 
     }
+
     @NonNull
     @Override
     public AlumnoBasicViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {

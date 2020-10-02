@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AlumnoContent.feedAlumnos();
+
 //
 //        final Toolbar toolbar = findViewById(R.id.toolbarAlumnoList);
 //        setSupportActionBar(toolbar);
@@ -28,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerAlumnos = findViewById(R.id.rvAlumnos);
 
-        AlumnoAdapter AlumnoAdapter = new AlumnoAdapter();
+        AlumnoAdapter alumnoAdapter = new AlumnoAdapter();
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getBaseContext());
         recyclerAlumnos.setLayoutManager(mLayoutManager);
         recyclerAlumnos.setItemAnimator(new DefaultItemAnimator());
         recyclerAlumnos.addItemDecoration(new DividerItemDecoration(getBaseContext(), LinearLayoutManager.VERTICAL));
-        recyclerAlumnos.setAdapter(AlumnoAdapter);
+        recyclerAlumnos.setAdapter(alumnoAdapter);
 
 
     }
