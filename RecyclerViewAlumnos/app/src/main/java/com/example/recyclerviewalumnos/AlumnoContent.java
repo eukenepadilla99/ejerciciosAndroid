@@ -71,10 +71,9 @@ public class AlumnoContent {
 
 
         }
-        public static final List<AlumnoItem> ITEMS = new ArrayList<>();
 
-        //the data, as a static arraylist
-        private ArrayList<AlumnoContent> initAlumno(){
+        public static final List<AlumnoItem> ITEMS = new ArrayList<>();
+        {
             AlumnoItem alumno1 = new AlumnoItem(1, "Moby Dick", "Herman Mieville",
                     "varias editoriales", "Sistemas informaticos");
 

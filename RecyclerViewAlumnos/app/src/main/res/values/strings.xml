@@ -5,4 +5,9 @@
     <string name="ciclo">Ciclo</string>
     <string name="curso">Curso</string>
     <string name="id">Ids</string>
+    <string name="tvNombre"></string>
+    <string name="tvApellidos"></string>
+    <string name="tvCiclo"></string>
+    <string name="tvCurso"></string>
+
 </resources>
