@@ -1,5 +1,6 @@
 package com.example.recyclerviewalumnos;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,14 +49,13 @@ public static class AlumnoBasicViewHolder extends RecyclerView.ViewHolder {
     public void onBindViewHolder(@NonNull AlumnoBasicViewHolder holder, int position) {
 
         holder.tvNombre.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getNombre());
+        Log.d("miFiltro","Nombre primero"+AlumnoContent.AlumnoItem.ITEMS.get(position).getNombre());
         holder.tvApellidos.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getApellidos());
         holder.tvCurso.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getCurso());
         holder.tvCiclo.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getCiclo());
     }
     @Override
 
-    public int getItemCount() {
-        return AlumnoContent.AlumnoItem.ITEMS.size();
-    }
+    public int getItemCount() {return AlumnoContent.AlumnoItem.ITEMS.size();}
 
 }

@@ -20,13 +20,51 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarAlumnoList"
-        android:elevation="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+    <TextView
+        android:id="@+id/tvnombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:theme="?attr/actionBarTheme" />
+        app:layout_constraintVertical_bias="0.022" />
 
+    <TextView
+        android:id="@+id/tvapellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/apellidos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/tvciclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ciclo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/tvcurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/curso"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
 </androidx.constraintlayout.widget.ConstraintLayout>
