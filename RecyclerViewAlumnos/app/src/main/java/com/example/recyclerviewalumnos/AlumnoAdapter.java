@@ -53,13 +53,20 @@ public class AlumnoAdapter extends RecyclerView.Adapter<AlumnoAdapter.AlumnoBasi
     public void onBindViewHolder(@NonNull AlumnoBasicViewHolder holder, int position) {
 
         holder.tvNombre.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getNombre());
-        Log.d("miFiltro","Nombre primero"+AlumnoContent.AlumnoItem.ITEMS.get(position).getNombre());
+        Log.d("miFiltro","Nombre "+AlumnoContent.AlumnoItem.ITEMS.get(position).getNombre()+" numero: "+position);
         holder.tvApellidos.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getApellidos());
         holder.tvCurso.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getCurso());
         holder.tvCiclo.setText(AlumnoContent.AlumnoItem.ITEMS.get(position).getCiclo());
+
     }
     @Override
 
-    public int getItemCount() {return AlumnoContent.AlumnoItem.ITEMS.size();}
+    public int getItemCount() {
+
+        Log.d("miFiltro","Cantidad: "+AlumnoContent.AlumnoItem.ITEMS.size());
+
+        return AlumnoContent.AlumnoItem.ITEMS.size();
+
+    }
 
 }

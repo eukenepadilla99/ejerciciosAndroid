@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AlumnoContent.feedAlumnos();
+//        AlumnoContent.feedAlumnos();
 
 //
 //        final Toolbar toolbar = findViewById(R.id.toolbarAlumnoList);
