@@ -9,4 +9,11 @@
     <string name="butInicio">Inisio</string>
     <string name="tvInicio">tehviu de inisio</string>
 
+    <string name="tvTituloImg1Galeria">HOSTAL</string>
+    <string name="tvTituloImg2Galeria">ACTIVIDADES</string>
+    <string name="tvTituloUbicacionGaleria">UBICACIÓN Y SITIOS DE INTERÉS</string>
+
+    <string name="Hostal">HOSTAL</string>
+    <string name="Actividades">ACTIVIDADES</string>
+
 </resources>
