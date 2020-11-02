@@ -3,14 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     >
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="432dp"
+        android:layout_height="572dp"
         android:orientation="horizontal"
+        android:layout_gravity = "center"
+        android:gravity = "center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,13 +20,17 @@
 
         <ImageView
             android:id="@+id/imgGaleriaMostrar"
-            android:layout_width="118dp"
-            android:layout_height="109dp"
+            android:layout_width="418dp"
+            android:layout_height="335dp"
+            android:layout_gravity="center"
+            android:gravity = "center"
+            android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.109"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:visibility="visible" />
 
 
     </LinearLayout>
